@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grupi i Gjelbër | Skenderaj</title>
+<style>
+:root{--green:#176b45;--dark:#123b2b;--mint:#e9f6ed;--lime:#c9ee83;--ink:#173528;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#f7fbf7;line-height:1.6}
+header{position:sticky;top:0;z-index:5;background:#ffffffed;backdrop-filter:blur(10px);border-bottom:1px solid #dce9df}
+.nav{max-width:1120px;margin:auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{font-weight:800;color:var(--green);letter-spacing:.2px}.logo span{display:inline-grid;place-items:center;background:var(--mint);width:38px;height:38px;border-radius:50%;margin-right:8px}
+nav{display:flex;gap:20px;flex-wrap:wrap}nav a{color:var(--ink);text-decoration:none;font-weight:700;font-size:.93rem}nav a:hover{color:var(--green)}
+.hero{background:linear-gradient(120deg,#0c3828ee,#176b45df),url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1800&q=85') center/cover;color:white}
+.hero-inner{max-width:1120px;margin:auto;padding:86px 22px 92px;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:38px}
+.eyebrow{display:inline-block;border:1px solid #ffffff70;background:#ffffff14;border-radius:30px;padding:6px 12px;font-size:.84rem;font-weight:700}
+h1{font-size:clamp(2.5rem,6vw,4.7rem);line-height:1.03;letter-spacing:-1.8px;margin:18px 0}
+.hero p{font-size:1.1rem;max-width:610px;color:#e7f5e9}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.btn{display:inline-block;padding:12px 18px;border-radius:12px;font-weight:800;text-decoration:none;border:0;cursor:pointer;font-size:1rem}
+.btn-primary{background:var(--lime);color:#153d2b}.btn-light{color:white;border:1px solid #ffffff9c;background:#ffffff12}
+.hero-card{background:#ffffff13;border:1px solid #ffffff4d;border-radius:24px;padding:24px;backdrop-filter:blur(5px)}
+.hero-card .big{font-size:3.2rem}.hero-card h3{margin:4px 0 8px;font-size:1.35rem}.hero-card p{font-size:.98rem;margin:0}
+section{max-width:1120px;margin:auto;padding:64px 22px}
+.section-kicker{color:var(--green);font-weight:800;text-transform:uppercase;letter-spacing:1.2px;font-size:.8rem}
+h2{font-size:clamp(1.8rem,4vw,2.7rem);line-height:1.15;margin:8px 0 12px;letter-spacing:-.7px}
+.intro{max-width:700px;color:#557064}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+.card{background:white;border:1px solid #e0ebe2;border-radius:18px;padding:23px;box-shadow:0 8px 24px #17352808}
+.card .emoji{font-size:1.8rem}.card h3{margin:8px 0}.card p{margin:0;color:#5a7065}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
+.panel{background:white;border:1px solid #dce9df;border-radius:20px;padding:25px;box-shadow:0 8px 24px #17352808}
+label{display:block;font-weight:700;margin:14px 0 6px}
+input,select,textarea{width:100%;padding:12px 13px;border:1px solid #c9d9cd;border-radius:10px;background:#fff;color:var(--ink);font:inherit}
+input:focus,select:focus,textarea:focus{outline:3px solid #c9ee8380;border-color:var(--green)}
+textarea{min-height:110px;resize:vertical}
+.small{font-size:.87rem;color:#62786b}
+.file-preview{margin-top:12px;display:none;max-width:100%;max-height:260px;border-radius:12px;border:1px solid #dce9df}
+.notice{padding:13px 15px;border-radius:12px;background:#fff6d9;border:1px solid #f0dfa0;color:#5b4b17;font-size:.9rem;margin-top:15px}
+.success{display:none;padding:12px;border-radius:10px;background:var(--mint);color:var(--dark);margin-top:12px;font-weight:700}
+.callout{background:var(--dark);color:white;border-radius:22px;padding:30px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.callout p{color:#d6eadb;margin-bottom:0}
+footer{background:#0e3022;color:#dcebe0;padding:26px 22px;text-align:center}
+footer p{margin:5px;font-size:.9rem}
+@media(max-width:760px){.hero-inner{grid-template-columns:1fr;padding-top:62px}.hero-card{max-width:480px}.cards,.split{grid-template-columns:1fr}nav{gap:10px}nav a{font-size:.82rem}.nav{align-items:flex-start}.callout{display:block}.callout .btn{margin-top:18px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <div class="logo"><span>🌱</span>GRUPI I GJELBËR</div>
+    <nav aria-label="Navigimi kryesor">
+      <a href="#rreth">Rreth nesh</a><a href="#projekte">Projektet</a><a href="#anetar">Bëhu anëtar</a><a href="#ideja">Propozo ide</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="hero">
+    <div class="hero-inner">
+      <div>
+        <span class="eyebrow">🌍 Nxënës që veprojnë për natyrën</span>
+        <h1>Një Skenderaj më i gjelbër. Një e ardhme më e pastër.</h1>
+        <p>Mirë se erdhe te Grupi i Gjelbër! Bashkohu me nxënës që kujdesen për mjedisin, krijojnë projekte dhe sjellin ide të reja për shkollën dhe qytetin tonë.</p>
+        <div class="actions"><a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSemZmlFA5Bwn8uuOIxeQQUu1c-hr4LAbMTC-ezUzmrTh1sCWA/viewform?usp=publish-editor" target="_blank" rel="noopener">Bëhu anëtar 🌿</a><a class="btn btn-light" href="https://docs.google.com/forms/d/e/1FAIpQLSePuMitYFsyV0hm9aOI1MqjklERkv7EnxdFyyXHEkbbyg5_Xg/viewform?usp=publish-editor" target="_blank" rel="noopener">Dërgo projektin</a></div>
+      </div>
+      <div class="hero-card"><div class="big">🌳♻️💚</div><h3>Idetë e vogla sjellin ndryshime të mëdha</h3><p>Mbjellje, riciklim, postera, punime 3D dhe ide për Skenderajn e së ardhmes.</p></div>
+    </div>
+  </div>
+  <section id="rreth">
+    <div class="section-kicker">Kush jemi?</div><h2>Ne e mbrojmë natyrën me vepra.</h2>
+    <p class="intro">Grupi i Gjelbër është një iniciativë shkollore ku nxënësit bashkëpunojnë për të mësuar rreth mjedisit dhe për të realizuar projekte të dobishme e kreative.</p>
+    <div class="cards">
+      <article class="card"><div class="emoji">🌱</div><h3>Kujdesemi për natyrën</h3><p>Promovojmë gjelbërimin, pastërtinë dhe kujdesin për hapësirat e përbashkëta.</p></article>
+      <article class="card"><div class="emoji">♻️</div><h3>Krijojmë me ide</h3><p>Shndërrojmë materiale të ripërdorshme në punime kreative dhe modele edukative.</p></article>
+      <article class="card"><div class="emoji">🏙️</div><h3>Planifikojmë të ardhmen</h3><p>Propozojmë ide si mund të jetë Skenderaj më i gjelbër në vitet që vijnë.</p></article>
+    </div>
+  </section>
+  <section id="projekte">
+    <div class="section-kicker">Nga ideja te veprimi</div><h2>Çfarë mund të sjellësh ti?</h2>
+    <p class="intro">Nuk duhet të kesh një projekt të përfunduar. Mund të aplikosh me një ide të thjeshtë dhe ta zhvillosh bashkë me grupin.</p>
+    <div class="cards">
+      <article class="card"><div class="emoji">🏡</div><h3>Skenderaj 2036</h3><p>Model ose vizatim i një qyteti me më shumë pemë, parqe dhe hapësira të pastra.</p></article>
+      <article class="card"><div class="emoji">🧴</div><h3>Riciklim kreativ</h3><p>Objekte, makete dhe dekorime të krijuara nga materiale të ripërdorshme.</p></article>
+      <article class="card"><div class="emoji">🖼️</div><h3>Postera dhe fushata</h3><p>Mesazhe, ilustrime dhe ide për të vetëdijesuar nxënësit rreth mjedisit.</p></article>
+    </div>
+  </section>
+  <section id="anetar">
+    <div class="split">
+      <div><div class="section-kicker">Apliko sot</div><h2>Bëhu pjesë e Grupit të Gjelbër</h2><p class="intro">Plotëso formularin dhe trego pse dëshiron të marrësh pjesë. Për këtë version demonstrues, të dhënat nuk dërgohen te organizatorët.</p>
+        <div class="notice">Për privatësi, mos shkruaj adresën e shtëpisë, fjalëkalime ose numra personalë. Përdor vetëm të dhënat që shkolla i lejon të mblidhen.</div>
+      </div>
+      <div class="panel">
+        <h3>Formulari i anëtarësimit</h3>
+        <p>Plotëso formularin zyrtar për t'u bërë pjesë e Grupit të Gjelbër. Përgjigjet do të dërgohen përmes Google Forms.</p>
+        <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSemZmlFA5Bwn8uuOIxeQQUu1c-hr4LAbMTC-ezUzmrTh1sCWA/viewform?usp=publish-editor" target="_blank" rel="noopener">Hap formularin e anëtarësimit ↗</a>
+      </div>
+    </div>
+  </section>
+  <section id="ideja">
+    <div class="split">
+      <div><div class="section-kicker">Krijo diçka të re</div><h2>Propozo planin ose projektin tënd</h2><p class="intro">Na trego idenë, çfarë dëshiron të ndërtosh dhe cilat materiale të duhen. Mund të zgjedhësh edhe një fotografi për ta parë paraprakisht.</p></div>
+      <div class="panel">
+        <h3>Formulari i projektit</h3>
+        <p>Propozo idenë tënde dhe, nëse formulari e lejon, shto fotografinë e projektit.</p>
+        <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSePuMitYFsyV0hm9aOI1MqjklERkv7EnxdFyyXHEkbbyg5_Xg/viewform?usp=publish-editor" target="_blank" rel="noopener">Hap formularin e projektit ↗</a>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="callout"><div><h2>Fillo me një ide. Ndihmo të ndryshojë qyteti.</h2><p>Mbro natyrën. Fillo nga vetja. 🌿</p></div><a class="btn btn-primary" href="#anetar">Bashkohu tani</a></div>
+  </section>
+</main>
+<footer><p><strong>GRUPI I GJELBËR · SKENDERAJ</strong></p><p>Projekt shkollor për edukimin dhe kujdesin ndaj mjedisit.</p></footer>
+<script>
+// Butonat hapin drejtpërdrejt Google Forms.
+</script>
+</body>
+</html>
